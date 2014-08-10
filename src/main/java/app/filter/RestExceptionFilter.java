@@ -2,6 +2,7 @@
 package app.filter;
 
 import static app.utils.JsonHelper.toJson;
+import static app.utils.Tokens.APPLICATION_JSON;
 
 import org.javalite.activeweb.controller_filters.HttpSupportFilter;
 import org.springframework.http.HttpStatus;
@@ -26,11 +27,11 @@ public class RestExceptionFilter
 	public void onException(Exception e) {
 		if (e.getCause() instanceof RestException) {
 			// log exception
-			respond(toJson(((RestException) e.getCause()).getErrorWrapper())).status(HttpStatus.BAD_REQUEST.value());
+			respond(toJson(((RestException) e.getCause()).getErrorWrapper())).contentType(APPLICATION_JSON).status(HttpStatus.BAD_REQUEST.value());
 		} else {
 			final ErrorWrapper errorWrapper = new ErrorWrapper();
 			errorWrapper.addError(new Error(HttpStatus.BAD_REQUEST.value(), e.getMessage()));
-			respond(toJson(errorWrapper)).status(HttpStatus.BAD_REQUEST.value());
+			respond(toJson(errorWrapper)).contentType(APPLICATION_JSON).status(HttpStatus.BAD_REQUEST.value());
 		}
 	}
 }
