@@ -2,9 +2,6 @@
 
 <h2>Edit User with id=${user.id}:</h2>
 
-
-<hr/>
-
 <hr/>
 
 <@form controller="users" id="${user.id}"method="put">

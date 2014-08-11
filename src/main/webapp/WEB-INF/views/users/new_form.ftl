@@ -2,9 +2,6 @@
 
 <h2>Create New User:</h2>
 
-
-<hr/>
-
 <hr/>
 
 <@form controller="users" method="post">

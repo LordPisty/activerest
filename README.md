@@ -20,7 +20,10 @@ Follow these simple steps to run this app:
 
 * API urls:
     * http://localhost:8080/users
+    	* http://localhost:8080/users/new_form
+    	* http://localhost:8080/users/{user_id}/edit_form
     * http://localhost:8080/users/{user_id}/tasks
+    
   
 
  
