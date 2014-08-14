@@ -1,4 +1,4 @@
-# Simple example to explore pure RESTful Activeweb possibilities
+# Simple example to explore pure RESTful [ActiveWeb](http://javalite.io/activeweb) possibilities
 
 Follow these simple steps to run this app:
 
