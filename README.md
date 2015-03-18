@@ -1,5 +1,7 @@
 # Simple example to explore pure RESTful [ActiveWeb](http://javalite.io/activeweb) possibilities
 
+Related [Blog Article](http://www.productiveedge.com/blog/index.php/exploring-activeweb-pure-restful-possibilities)
+
 Follow these simple steps to run this app:
 
 * Create two empty schemas in MySQL DB:
